@@ -50,3 +50,7 @@ fi
 
 # http://stackoverflow.com/questions/13804382/how-to-automatically-run-bin-bash-login-automatically-in-the-embeded-termin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Alias for show/hide hidden files; from: http://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/
+alias showhiddenfiles="defaults write com.apple.finder AppleShowAllFiles YES;killall Finder /System/Library/CoreServices/Finder.app"
+alias hidehiddenfiles="defaults write com.apple.finder AppleShowAllFiles NO;killall Finder /System/Library/CoreServices/Finder.app"
