@@ -13,6 +13,13 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 #alias p="cd ~/Projects"
 alias g="git"
+alias gs='git status'
+alias gb='git branch'
+alias gpull='git pull'
+alias gpush='git push'
+alias gc='git checkout'
+alias gl='git log --pretty=oneline'
+alias gll='git log'
 alias h="history"
 alias j="jobs"
 alias v="vim"
