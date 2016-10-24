@@ -8,7 +8,7 @@ parse_git_branch() {
 
 # Autocomplete for Git commands and branch names.
 # First download this file:
-# curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 # More description at http://code-worrier.com/blog/autocomplete-git/
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
