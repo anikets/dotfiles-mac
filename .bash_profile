@@ -6,6 +6,18 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+# Autocomplete for Docker
+# https://docs.docker.com/docker-for-mac/#installing-bash-completion
+if [ -f /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion ]; then
+  . /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion
+fi
+if [ -f /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion ]; then
+  . /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion
+fi
+if [ -f /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion ]; then
+  . /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion
+fi
+
 # Autocomplete for Git commands and branch names.
 # First download this file:
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
