@@ -11,7 +11,7 @@ alias ll="ls -alGh"
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-#alias p="cd ~/Projects"
+alias p="cd ~/projects"
 alias g="git"
 alias gs='git status'
 alias gb='git branch'
@@ -167,4 +167,4 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 #alias reload="exec $SHELL -l"
 
 # Faster npm for europeans
-command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
+#command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
