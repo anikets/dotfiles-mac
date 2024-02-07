@@ -81,3 +81,11 @@ fi
 # Alias for show/hide hidden files; from: http://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/
 alias showhiddenfiles="defaults write com.apple.finder AppleShowAllFiles YES;killall Finder /System/Library/CoreServices/Finder.app"
 alias hidehiddenfiles="defaults write com.apple.finder AppleShowAllFiles NO;killall Finder /System/Library/CoreServices/Finder.app"
+
+# install Node Version Manager (nvm) https://github.com/nvm-sh/nvm
+# download and install
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# add these lines to your ~/.bashrc, ~/.profile, or ~/.zshrc file to have it automatically sourced upon login
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
